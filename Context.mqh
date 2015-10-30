@@ -102,7 +102,7 @@ public: // 環境変数取得系
 
 public:
 	Context( string symbol_, int timeframe_ = PERIOD_CURRENT ): Notifier(),
-	symbol( NULL ), timeframe( timeframe_ ), orders( new CArrayObj() ){
+	symbol( NULL ), timeframe( timeframe_ ), orders( new CArrayObj() ), riskCoeff( 1.0 ) {
 		setSymbol( symbol_ );
 		debugEnabled = false;
 	};
